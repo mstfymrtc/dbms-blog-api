@@ -67,6 +67,20 @@ app.post("/posts/incrementPostClap", (req, res) => {
   );
 });
 
+app.post("/posts/updatePost", (req, res) => {
+  let { postid, title, content, categoryid } = req.body;
+  pool.query(
+    "UPDATE posts SET title = $1, content = $2, categoryid = $3 WHERE postid = $4",
+    [title, content, categoryid, postid],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      res.status(200).send("Edit success!");
+    }
+  );
+});
+
 app.post("/posts/createPost", (req, res) => {
   const { title, content, categoryid, userid, imageurl } = req.body;
   const postid = uuidv4();

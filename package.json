@@ -1,0 +1,36 @@
+{
+  "name": "dbms-blog-api",
+  "version": "1.0.0",
+  "description": "nodejs api for dbms homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstfymrtc/dbms-blog-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstfymrtc/dbms-blog-api/issues"
+  },
+  "homepage": "https://github.com/mstfymrtc/dbms-blog-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.10.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "install": "^0.12.2",
+    "nodemon": "^1.18.11",
+    "npm": "^6.9.0"
+  }
+}
